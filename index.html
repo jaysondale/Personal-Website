@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-<nav class="navbar navbar-expand-lg navbar-dark ftco-navbar-light" id="ftco-navbar">
+<body>
+<nav class="navbar ftco-navbar navbar-expand-lg navbar-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
         <a class="navbar-brand" href="index.html" >Jayson Dale</a>
         <div class="collapse navbar-collapse" id="ftco-nav">
@@ -60,11 +60,10 @@
         </div>
     </div>
 </nav>
-<section class="hero-wrap  js-fullheight" id="home-section">
-    <div class="overlay"></div>
+<section style="background-image: linear-gradient(#3e64ff, #ffffff);" class="hero-wrap  js-fullheight" id="home-section">
     <div class="container">
         <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-            <div class="col-lg-8 col-md-6 ftco-animate d-flex flex-column align-items-center fadeInUp ftco-animated">
+            <div class="col-lg-8 ftco-animate d-flex flex-column align-items-center">
                 <div class="text text-center">
                     <h1>Jayson Dale</h1>
                 </div>
@@ -77,17 +76,17 @@
         </div>
     </div>
 </section>
-<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="bio-section">
     <div class="container-fluid">
         <div class="row d-flex no-gutters">
-            <div class="col-md-6 col-lg-6 d-flex">
-                <div class="img-about img d-flex align-items-stretch">
-                    <img class="img-thumbnail rounded-circle" src="images/headshot.png" />
+            <div class="col-lg-6 p-5 d-flex">
+                <div class="img-about img d-flex align-content-center">
+                    <img class="img-fluid" src="images/headshot.png" />
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 pl-md-5 py-5">
                 <div class="row justify-content-start pb-3">
-                    <div class="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
+                    <div class="col-md-12 heading-section ftco-animate">
                         <h2 class="mb-4">Hello!</h2>
                         <p>I am a Software Engineering and Business student that likes to think <b>big</b> about the <b>future</b>! Scroll down to see some of my technology projects along with a portfolio of musical work!</p>
                     </div>
@@ -96,10 +95,127 @@
         </div>
     </div>
 </section>
-<section id="education">
-    
+<section id="experience-section" class="ftco-section ftco-no-pb goto-here">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="page">
+                <h2 class="heading">Experience</h2>
+                <div class="resume-wrap d-flex ftco-animate">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img class="icon-image img-fluid" src="images/wai_icon.png">
+                    </div>
+                    <div class="text pl-3">
+                        <span class="date">2018 - 2020</span>
+                        <h2>Co-Founder and Project Manager</h2>
+                        <span class="position">Western AI</span>
+                        <p>
+                            • Co-founded AI projects and education club with the goal of creating an on-campus community for students interested in AI to develop and apply their skills.<br>
+                            • Attracted over 400 members and formed over 20 project teams in first year of operations.<br>
+                            • Led intermediate computer vision project team of 5 second-year software engineering students through the learning and development of a crowd-counting model called SIZE.AI (See project details below).
+                        </p>
+                    </div>
+                </div>
+                <div class="resume-wrap d-flex ftco-animate">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img class="icon-image img-fluid" src="images/peraso_icon.png">
+                    </div>
+                    <div class="text pl-3">
+                        <span class="date">2019 May-August</span>
+                        <h2>Applications Engineering Intern</h2>
+                        <span class="position">Peraso Technologies</span>
+                        <p>
+                            • Developed a modular and scalable automated system for testing wireless chipsets in Python to ensure product quality across a variety of industry metrics; system reduced testing time by 75%.<br>
+                            • Organized the testing system codebase by employing object-oriented programming principles and documented it using a UML class-hierarchy; efforts resulted in a smooth integration of the system.
+                        </p>
+                    </div>
+                </div>
+                <h2 class="heading">Education</h2>
+                <div class="resume-wrap d-flex ftco-animate">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <img class="icon-image img-fluid" src="images/uwo_logo.png">
+                    </div>
+                    <div class="text pl-3">
+                        <span class="date">2018-Present</span>
+                        <h2>Bachelor of Software Engineering (BESc.)</h2>
+                        <span class="position">University of Western Ontario</span>
+                        <p>
+                            • 85% Second-Year Average (3.8 Weighted GPA)<br>
+                            • Continuing Admissions Scholarship (>95% Admissions Average)<br>
+                            • Advanced Entry Option (AEO) status to the Ivey School of Business HBA Program
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
+<section class="ftco-section ftco-project" id="software-section">
+    <div class="container-fluid px-md-0">
+        <div class="row no-gutters justify-content-center pb-5">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <h2 class="mb-4">Software Projects</h2>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/sizeai.png);">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                        <h3><a href="https://github.com/jaysondale/Size.AI-Deployment">SIZE.AI</a></h3>
+                        <span>Crowd Counting Model that uses dilated convolutional layers (CSRNet) to count the number of people in a crowd!</span><br>
+                        <a style="color: #0b0b0b" href="https://app3-qrhrzckmpq-ue.a.run.app">CLICK FOR DEMO</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/cc_screenshot.png);">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                        <h3><a href="https://github.com/jaysondale/Corporate-Climb">Corporate Climb</a></h3>
+                        <span>Final project for SE 2250 Game Design developed in C# and Unity at Western University. Try your hand at becoming CEO of Quantbit Inc!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/spend_screenshot.png);">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                        <h3><a href="https://github.com/jaysondale/Spend-Personal-Accounting">Spend Personal Accounting</a></h3>
+                        <span>Effortlessly organize your credit card and bank statements with precision! Project built in JavaFX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ftco-section" id="music-section">
+    <div class="container-fluid">
+        <div class="row no-gutters justify-content-center pb-5">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <h2 class="mb-4">Music</h2>
+                <p>Piano/Keyboardist, Guitarist, Drummer, Intermediate Producer</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 pb-5 d-flex ftco-animate justify-content-center">
+                <a href="https://soundcloud.com/user-5479381" class="btn btn-primary">Soundcloud</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 justify-content-center ftco-animate">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/777672859&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-5479381" title="json" target="_blank" style="color: #cccccc; text-decoration: none;">json</a> · <a href="https://soundcloud.com/user-5479381/acoustic-soul" title="Acoustic Soul" target="_blank" style="color: #cccccc; text-decoration: none;">Acoustic Soul</a></div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/792395389&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-5479381" title="json" target="_blank" style="color: #cccccc; text-decoration: none;">json</a> · <a href="https://soundcloud.com/user-5479381/slow-jams" title="Slow Jams" target="_blank" style="color: #cccccc; text-decoration: none;">Slow Jams</a></div>
+            </div>
+            <div class="col-md-4 ftco-animate align-content-center justify-content-center">
+                <div class="text text-center">
+                    <p>More to come!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-migrate-3.0.1.min.js"></script>
